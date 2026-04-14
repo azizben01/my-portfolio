@@ -6,7 +6,7 @@ export const siteConfig = {
   ctaLabel: "Contact",
   heroImage: {
     // Put your image in: /public/images/hero-illustration.png
-    src: "/images/profile2.jpg",
+    src: "/images/Profile2.jpg",
     alt: "Portrait / illustration of Ben",
   },
   mission:
