@@ -19,3 +19,5 @@ export const siteConfig = {
     { label: "GitHub", href: "https://github.com/azizben01" },
   ],
 } as const;
+
+// change account and add a part that says future or incoming work
