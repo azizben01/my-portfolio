@@ -9,7 +9,11 @@ type Props = React.SVGProps<SVGSVGElement> & {
     | "penTool"
     | "type"
     | "mail"
-    | "link";
+    | "link"
+    | "download"
+    | "server"
+    | "check"
+    | "mapPin";
 };
 
 export function Icon({ name, ...props }: Props) {
@@ -161,6 +165,58 @@ export function Icon({ name, ...props }: Props) {
           />
         </svg>
       );
+    case "download":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" {...props}>
+          <path
+            d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      );
+    case "server":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" {...props}>
+          <path
+            d="M4 4h16v6H4V4zM4 14h16v6H4v-6z"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M8 7h.01M8 17h.01"
+            stroke="currentColor"
+            strokeWidth="2.4"
+            strokeLinecap="round"
+          />
+        </svg>
+      );
+    case "check":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" {...props}>
+          <path
+            d="M5 12.5l4.5 4.5L19 7.5"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      );
+    case "mapPin":
+      return (
+        <svg viewBox="0 0 24 24" fill="none" {...props}>
+          <path
+            d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinejoin="round"
+          />
+          <circle cx="12" cy="9.5" r="2.5" stroke="currentColor" strokeWidth="1.8" />
+        </svg>
+      );
   }
 }
-

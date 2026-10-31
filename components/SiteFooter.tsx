@@ -10,9 +10,9 @@ export function SiteFooter() {
             <div className="text-lg font-garamond font-semibold tracking-tight text-black">
               {siteConfig.name}
             </div>
-            {/* <div className="text-sm text-black/60">
+            <div className="font-garamond text-base font-semibold text-black/60">
               {siteConfig.role} · {siteConfig.location}
-            </div> */}
+            </div>
           </div>
           <div className="font-delius flex flex-wrap items-center gap-2">
             {siteConfig.socials.map((s) => (
@@ -25,7 +25,7 @@ export function SiteFooter() {
               </a>
             ))}
             <Link
-              href="/contact"
+              href="/#contact"
               className=" rounded-full bg-black px-4 py-2 text-sm font-medium text-white hover:bg-black/90"
             >
               Contact

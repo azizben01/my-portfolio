@@ -16,9 +16,29 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const defaultTitle = `${siteConfig.name} — ${siteConfig.role}, Budapest`;
+
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — ${siteConfig.role}`,
-  description: `${siteConfig.role} portfolio and selected work.`,
+  // Lets Next.js turn relative URLs (like the OG image) into absolute ones.
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: defaultTitle,
+    template: `%s · ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: siteConfig.name,
+    title: defaultTitle,
+    description: siteConfig.description,
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: defaultTitle,
+    description: siteConfig.description,
+  },
 };
 
 export default function RootLayout({
@@ -31,7 +51,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white text-blacky">
+      <body className="min-h-full flex flex-col bg-white text-black">
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <Analytics />
