@@ -84,12 +84,12 @@ export default function Home() {
               </div>
 
               <h1 className="text-balance font-garamond text-[46px] font-semibold leading-[0.95] tracking-tight text-black sm:text-[64px] lg:text-[76px]">
-                Junior web developer who ships to production.
+                I build websites and run the server they live on.
               </h1>
 
               <p className="font-garamond font-semibold max-w-xl text-xl leading-8 text-black/60">
-                MSc Computer Science (Autonomous Systems) student at ELTE,
-                Budapest. I build web apps with Next.js and TypeScript, and run
+                Foundation year for the MSc in Computer Science (Autonomous
+                Systems), ELTE, Budapest. I build web apps with Next.js and TypeScript, and run
                 the Linux server that hosts them.
               </p>
 
@@ -171,7 +171,7 @@ export default function Home() {
         <div className="font-garamond">
           <h2 className="text-5xl font-semibold tracking-tight">What I can do</h2>
           <p className="mt-4 max-w-xl text-lg font-semibold leading-8 text-black/60">
-            The tools I use on real projects — and can talk through in detail.
+            The tools I’ve used on real projects.
           </p>
         </div>
 
@@ -212,8 +212,12 @@ export default function Home() {
       >
         <div className="text-lg font-semibold text-black/50">Projects</div>
         <h2 className="mt-2 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Sites I built and run in production
+          Websites I’ve built
         </h2>
+        <p className="mt-4 max-w-2xl text-lg leading-8 text-black/60">
+          I built these with AI assistance — I handled the structure,
+          integration and deployment.
+        </p>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           {projects.map((p) => (
@@ -279,11 +283,6 @@ export default function Home() {
                     </span>
                   ))}
                 </div>
-
-                <p className="mt-4 text-sm italic leading-5 text-black/45">
-                  Built with AI assistance — I handled structure, integration
-                  and deployment.
-                </p>
 
                 <div className="font-delius mt-auto flex flex-wrap gap-2 pt-5">
                   <a
@@ -382,7 +381,8 @@ export default function Home() {
           <ul className="space-y-3 text-lg leading-8 text-black/65">
             <li>
               I’m from Burkina Faso, studied in Rwanda, and now live in Budapest,
-              where I’m doing an MSc in Computer Science at ELTE.
+              where I’m in the foundation year for the MSc in Computer Science
+              at ELTE.
             </li>
             <li>
               I speak French and English fluently, and I’m learning Hungarian.

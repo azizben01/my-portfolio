@@ -12,7 +12,7 @@ export const siteConfig = {
   githubUrl,
   linkedinUrl,
   description:
-    "MSc Computer Science student at ELTE, Budapest. Junior web developer building Next.js + TypeScript apps and hosting them on my own Linux server. Open to part-time student roles.",
+    "Foundation year for the MSc in Computer Science at ELTE, Budapest. Junior web developer building Next.js + TypeScript apps and hosting them on my own Linux server. Open to part-time student roles.",
   heroImage: {
     src: "/images/Profile2.jpg",
     alt: "Portrait of Ben Aziz Sangare",

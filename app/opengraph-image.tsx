@@ -37,10 +37,10 @@ export default function OpengraphImage() {
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 76, fontWeight: 700, color: "#0b0b0d", lineHeight: 1.05 }}>
-            Junior web developer who ships to production.
+            I build websites and run the server they live on.
           </div>
           <div style={{ marginTop: 24, fontSize: 32, color: "#555555" }}>
-            Next.js · TypeScript · Linux hosting · MSc CS at ELTE
+            Next.js · TypeScript · Linux hosting · ELTE foundation year
           </div>
         </div>
         <div style={{ display: "flex", fontSize: 34, fontWeight: 700, color: "#2e9bb2" }}>
